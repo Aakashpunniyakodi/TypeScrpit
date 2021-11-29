@@ -1,0 +1,35 @@
+#maindiv{
+    display: block;
+}
+#registerdiv{
+    display: none;
+}
+#logindiv{
+    display: none;
+}
+#usermenudiv{
+    display: none;
+}
+#availablecoursediv{
+    display: none;
+}
+#enrolledcoursediv{
+    display: none;
+}
+body{
+    text-align: center;
+    background-color: rgb(2, 250, 250);
+    margin: 20%;
+}
+button{
+    background-color: gold;
+    font-size: xx-large;
+    width: 250px;
+    color: darkgreen;
+}
+button:hover{
+    color: darkorchid;
+}
+button:active{
+    color: deeppink;
+}

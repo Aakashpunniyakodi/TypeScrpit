@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>Course Enrollment</h1>
+    <div id="maindiv">
+        <button id="register" onclick="showRegisterDiv()">Register</button>
+        <button id="login" onclick="showLoginDiv()">Login</button>
+    </div>
+    <div id="registerdiv">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your Name">
+        <br><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" placeholder="Enter your age">  
+        <br><br>
+        <label for="phonenumber">Phone Number:</label><br>
+        <input type="text" id="phonenumber" placeholder="Enter your phone number">
+        <br><br>
+        <button onclick="register()"> Register</button>
+    </div>
+    <div id="logindiv">
+        <label for="useridcheck">Login ID:</label>
+        <input type="text" id="useridcheck" placeholder="Enter your Login ID">
+        <br><br>
+        <button onclick="validate()">Login</button>
+        <label id="showuserlist"></label>
+    </div>
+    <div id="usermenudiv">
+        <label for="greet" id="greet"></label><br>
+        <button onclick="showAvailableCouseDiv()"> Available Course</button>
+        <button onclick="showEnrolledCourseDiv()">enrolled Coursed</button>
+    </div>
+    <div id="availablecoursediv">
+        <label for="greet" id="greet"></label><br>
+        <select name="Courses" id="course">
+            <option value="HTML">HTML</option>
+            <option value="C#">C#</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Typescript">Typescript</option>
+            <option value="My SQL">My SQL</option>
+        </select><br>
+        <label for="days">Required Days:</label> <input type="text" name="days" id="days"><br><br>
+        <button id="enroll" onclick="enroll()">Enroll</button>
+    </div>
+    <div id="enrolledcoursediv">
+        <label for="greet" id="greet"></label><br>
+        <label id="showlistofenrolledcourse" ></label>
+        <label id="calculatedays"></label>
+        <button id="showhist" onclick="showhistory()">show</button>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
